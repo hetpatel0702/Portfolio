@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Hobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    function showDescription()
+    {
+
+        let chess = document.getElementById("checkbox1");
+        let games = document.getElementById("checkbox2");
+        let books = document.getElementById("checkbox3");
+    
+        if(chess.checked)
+        {
+            document.getElementById("detail1").style.display = "block";
+        }
+        if(!chess.checked)
+        {
+            document.getElementById("detail1").style.display = 'none';
+        }
+        if(games.checked)
+        {
+            document.getElementById("detail2").style.display = 'block';
+        }
+        if(!games.checked)
+        {
+            document.getElementById("detail2").style.display = 'none';
+        }
+        if(books.checked)
+        {
+            document.getElementById("detail3").style.display = 'block';
+        }
+        if(!books.checked)
+        {
+            document.getElementById("detail3").style.display = 'none';
+        }
+    }
+</script>
+
+<body>
+    <nav class="navbar">
+        <!-- <div id="logo">
+                "HET"
+            </div> -->
+        <div id="index">
+            <ul style="list-style-type: none">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="hobbies.html">
+                        Hobbies
+                    </a>
+                </li>
+                <li>
+                    <a href="education.html">
+                        Education
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html">
+                        Feedback
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr class="line">
+
+    <div class="projectTitle">My Hobbies</div>
+
+    <div id="hobbiesForm">
+        <form>
+
+            <input id="checkbox1" type="checkbox" value="Chess">
+            <label> Chess</label>
+            <br>
+            <p id="detail1" style="display:none;color: aliceblue;">I have recently started playing chess, but i really enjoy playing it. My Chess.com ID: hetpatel72
+            </p>
+
+            <input id="checkbox2" type="checkbox" value="PC and Mobiles Games">
+            <label> PC and Mobile Games</label>
+            <br>
+            <p id="detail2" style="display:none;color: aliceblue;">I've been playing these from a long time. I love BGMI and other Action
+                games.</p>
+
+            <input id="checkbox3" type="checkbox" value="Reading Self Help books">
+            <label> Reading Self help books</label>
+            <br>
+            <p id="detail3" style="display:none;color: aliceblue;">Currently reading Atomic Habits.</p>
+
+            <button id="button" type="button" onclick="showDescription()">Learn More</button>
+        </form>
+    </div>

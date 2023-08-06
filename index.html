@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    var interval = setInterval(function(){
+          var countForVideo = document.getElementById('myvideo').readyState;
+          if(countForVideo == 4){
+            document.getElementById('vid').play();
+            clearInterval(interval);
+          }
+        },2000);
+</script>
+
+<body>
+    <nav class="navbar">
+        <!-- <div id="logo">
+                "HET"
+            </div> -->
+        <div id="index">
+            <ul style="list-style-type: none">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="hobbies.html">
+                        Hobbies
+                    </a>
+                </li>
+                <li>
+                    <a href="education.html">
+                        Education
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html">
+                        Feedback
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr id="line1">
+
+    <div id="personalInfo">
+        <div class="left">
+            <div id="myName">
+                <div>Hello <img id="hello" src="9.png" alt=""></div>
+                <div>I'm <span style="color: rgb(82, 81, 170)">Het Patel</span></div>
+            </div>
+            <p id="desc" style="font-size: 11pt;">I am currently doing M.Tech in Computer Science at IIT Bombay. I'm from
+                Mehsana, Gujarat, and I completed my B.Tech from G H Patel College of Engineering and Technology,
+                Gujarat. I started preparing for GATE in my 3rd
+                year and got AIR 34 this time. I am also a Teaching Assistant for CS 101 course at IIT Bombay.
+                Right now, I'm interested in both Systems and Machine Learning, but I want to explore them more before
+                deciding which one to focus on. I also love to do coding questions. Apart from my studies, I love to play chess,
+                online games, and watching movies.</p>
+        </div>
+        <div class="right">
+            <img id="myimage" title="Het Patel" src="myphoto.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="contact">
+        Introduction Video
+    </div>
+
+    <hr id="line2">
+
+    <div id="videoContainer">
+        <video id="myvideo" autoplay="autoplay" controls="controls">
+            <source src="myvideo.mp4" type="type/mp4">
+        </video>
+    </div>
+
+    <div id="contact">
+        Contact Me
+    </div>
+    <hr id="line3">
+    <div id="contact-me">
+        <ul style="list-style-type: none">
+            <li>
+                <a href="https://www.instagram.com/hetpatel_72/" target="_blank">
+                    <img src="instacolor.png" alt="">
+                </a>
+
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/het-patel-94542212a" target="_blank">
+                    <img src="linkedincolor.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:hetpatel07396@gmail.com" target="_blank">
+                    <img src="gmail.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/hetpatel0702" target="_blank">
+                    <img src="githubcolor.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    
+
+
+
+</body>
+
+</html>
